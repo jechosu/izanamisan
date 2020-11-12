@@ -12,7 +12,7 @@ client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
 
 client.on('message', message => {
 const user = message.mentions.users.first();
-const user = client.users.cache.get('<id>');
+user = client.users.cache.get('<id>');
 mention = message.mentions.users.first();
 	
 	if (message.content === `hi izanami`) {
