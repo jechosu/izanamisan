@@ -5,7 +5,6 @@ const ytdl = require('ytdl-core');
 const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const PORT = process.env.PORT || 3000;
     console.log(`App is running on port ${ PORT }`);
-});
 
 client.on('ready', () => {
 client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
