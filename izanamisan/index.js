@@ -24,9 +24,9 @@ mention = message.mentions.users.first();
 }
 	
 	if (message.content === `hi izanami`) {
-	message.channel.send('hello ${user.toString()}');
+	message.channel.send('hello');
 } else if (message.content === `morning!`) {
-	message.channel.send('its a nice day today {user}.');
+	message.channel.send('its a nice day today');
 } else if (message.content === `go out with me!`) {
 	message.channel.send('im sorry. I cant do that .');
 } else if (message.content === `I love you.`) {
