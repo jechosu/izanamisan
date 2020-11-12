@@ -40,9 +40,7 @@ mention = message.mentions.users.first();
        if (command === 'avatar') {
 	const user = message.author;
 	return message.channel.send(`${user.username}'s avatar: ${user.displayAvatarURL({ dynamic: true })}`);
-}
-
-);
+});
 
 client.login('Nzc1Mzc1OTc5NjkwMTk3MDUy.X6lbJw.uNM4yav6ibwyycw2a-Fpjrss7aA');
 
