@@ -12,9 +12,11 @@ client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
 
 client.on('message', message => {
 const user = message.mentions.users.first();
-
+mention = message.mentions.users.first();
+message.channel.send(`Hello <@${mention.id}>`);
+	
 	if (message.content === `hi izanami`) {
-	message.channel.send('hello ${user} <@user id>');
+	message.channel.send('hello ${user}');
 } else if (message.content === `morning!`) {
 	message.channel.send('its a nice day today {user}.');
 } else if (message.content === `go out with me!`) {
