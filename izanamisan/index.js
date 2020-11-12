@@ -16,7 +16,7 @@ client.users.cache.get('<id>');
 mention = message.mentions.users.first();
 	
 	if (message.content === `hi izanami`) {
-	message.channel.send('hello <@${user.id}>');
+	message.channel.send('hello ${user.toString()}');
 } else if (message.content === `morning!`) {
 	message.channel.send('its a nice day today {user}.');
 } else if (message.content === `go out with me!`) {
@@ -39,7 +39,6 @@ mention = message.mentions.users.first();
 	message.channel.send('youre such a meanie');
 } else if (command === 'avatar') {
 	const user = message.author;
-
 	return message.channel.send(`${user.username}'s avatar: ${user.displayAvatarURL({ dynamic: true })}`);
 }
 
