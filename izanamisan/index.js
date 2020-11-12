@@ -4,7 +4,6 @@ const client = new Discord.Client();
 const ytdl = require('ytdl-core');
 const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
     console.log(`App is running on port ${ PORT }`);
 });
 
