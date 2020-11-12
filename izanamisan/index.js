@@ -14,6 +14,14 @@ client.on('message', message => {
 const user = message.mentions.users.first();
 client.users.cache.get('<id>');
 mention = message.mentions.users.first();
+
+	if (msg.startsWith (prefix + "send")) {
+		if (mention == null) {return;}
+		message.delete();
+		mentionMessage = message.content.slice (8);
+		mention.sendMessage (mentionMessage);
+		message.channel.send ("done!");
+}
 	
 	if (message.content === `hi izanami`) {
 	message.channel.send('hello ${user.toString()}');
@@ -37,11 +45,8 @@ mention = message.mentions.users.first();
 	message.channel.send(':relaxed: ありがとうございます!');
 } else if (message.content === `ur ugly`) {
 	message.channel.send('youre such a meanie');
+}
 	
-};
-       if (command === 'avatar') {
-	const user = message.author;
-	return message.channel.send(`${user.username}'s avatar: ${user.displayAvatarURL({ dynamic: true })}`);
 });
 
 client.login('Nzc1Mzc1OTc5NjkwMTk3MDUy.X6lbJw.uNM4yav6ibwyycw2a-Fpjrss7aA');
