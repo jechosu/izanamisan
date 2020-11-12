@@ -15,7 +15,7 @@ const user = message.mentions.users.first();
 client.users.cache.get('<id>');
 mention = message.mentions.users.first();
 
-	if (msg.startsWith (prefix + "send")) {
+	if (message.startsWith (prefix + "send")) {
 		if (mention == null) {return;}
 		message.delete();
 		mentionMessage = message.content.slice (8);
