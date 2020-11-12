@@ -13,7 +13,7 @@ client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
 client.on('message', message => {
 const user = message.mentions.users.first();
 mention = message.mentions.users.first();
-const user = message.channel.send(`Hello <@${user.id}>`);
+client.user = message.channel.send(`Hello <@${user.id}>`);
 	
 	if (message.content === `hi izanami`) {
 	message.channel.send('hello <@${user.id}>');
