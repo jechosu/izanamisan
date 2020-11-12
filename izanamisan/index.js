@@ -38,7 +38,7 @@ mention = message.mentions.users.first();
 } else if (message.content === `ur ugly`) {
 	message.channel.send('youre such a meanie');
 	
-});
+};
        if (command === 'avatar') {
 	const user = message.author;
 	return message.channel.send(`${user.username}'s avatar: ${user.displayAvatarURL({ dynamic: true })}`);
