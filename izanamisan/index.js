@@ -46,6 +46,7 @@ mention = message.mentions.users.first();
 	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
 } else if (message.content === 'ur so wierd') {
 	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
+}
 
 });
 
