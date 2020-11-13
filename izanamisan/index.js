@@ -16,7 +16,8 @@ client.users.cache.get('<id>');
 mention = message.mentions.users.first();
 	
 	if (message.content === `hi izanami`) {
-	message.channel.send('hello');
+		const user = message.author;
+	message.channel.send('hello ${user.username}');
 } else if (message.content === `morning!`) {
 	message.channel.send('its a nice day today');
 } else if (message.content === `go out with me!`) {
