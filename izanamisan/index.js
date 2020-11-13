@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
     console.log(`App is running on port ${ PORT }`);
 
 client.on('ready', () => {
-client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
+client.user.setPresence({ activity: { name: 'stable build' }, status: 'online' });
 });
 
 client.on('message', message => {
