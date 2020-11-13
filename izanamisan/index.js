@@ -11,10 +11,10 @@ client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
 });
 
 client.on('message', message => {
+client.on('guildMemberAdd', (member) => {
 const user = message.mentions.users.first();
 client.users.cache.get('<id>');
 mention = message.mentions.users.first();
-client.on('guildMemberAdd', (member) => {
 	
 	if (message.content === `hi izanami`) {
 	message.channel.send('hello <@${member.id}>');
