@@ -14,6 +14,7 @@ client.on('message', message => {
 const user = message.mentions.users.first();
 client.users.cache.get('<id>');
 mention = message.mentions.users.first();
+client.on('guildMemberAdd', (member) => {
 	
 	if (message.content === `hi izanami`) {
 	message.channel.send('hello <@${member.id}>');
