@@ -37,7 +37,7 @@ mention = message.mentions.users.first();
 	message.channel.send(':relaxed: ありがとうございます!');
 } else if (message.content === `ur ugly`) {
 	message.channel.send('youre such a meanie');
-} else if (message.content === `what can i say @Izanami-san#0143`) {
+} else if (message.content === `what can i say <@775375979690197052>`) {
 	message.member.send('you can say the following\n hi izanami\n morning\n go out with me!\n I love you.\n stfu\n fuck\n shit\n you are so cute\n are you ok?\n ur ugly');
 }
 	
