@@ -43,7 +43,7 @@ mention = message.mentions.users.first();
 } else if (message.content === 'you are pretty izanami') {
 	message.channel.send(':relaxed: ありがとうございます!')
 } else if (message.content === 'shut up') {
-	message.channel.send('be a little more nice, could you :relaxed: :pleading_face:')
+	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
 	
 });
 
