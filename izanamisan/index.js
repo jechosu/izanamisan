@@ -44,6 +44,7 @@ mention = message.mentions.users.first();
 	message.channel.send(':relaxed: ありがとうございます!')
 } else if (message.content === 'shut up') {
 	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
+}
 	
 });
 
