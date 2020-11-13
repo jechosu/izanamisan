@@ -47,3 +47,5 @@ mention = message.mentions.users.first();
 client.login('Nzc1Mzc1OTc5NjkwMTk3MDUy.X6lbJw.uNM4yav6ibwyycw2a-Fpjrss7aA');
 
 client.on('debug', console.log);
+
+});
