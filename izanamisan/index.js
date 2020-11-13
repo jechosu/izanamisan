@@ -16,7 +16,7 @@ client.users.cache.get('<id>');
 mention = message.mentions.users.first();
 	
 	if (message.content === `hi izanami`) {
-	message.member.send('hello ${message.author}');
+	message.channel.send('hello');
 } else if (message.content === `morning!`) {
 	message.channel.send('its a nice day today');
 } else if (message.content === `go out with me!`) {
@@ -37,6 +37,8 @@ mention = message.mentions.users.first();
 	message.channel.send(':relaxed: ありがとうございます!');
 } else if (message.content === `ur ugly`) {
 	message.channel.send('youre such a meanie');
+} else if (message.content === `what can i say @Izanami-san#0143`) {
+	message.member.send('you can say the following\n hi izanami\n morning\n go out with me!\n I love you.\n stfu\n fuck\n shit\n you are so cute\n are you ok?\n ur ugly');
 }
 	
 });
