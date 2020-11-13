@@ -38,7 +38,7 @@ mention = message.mentions.users.first();
 } else if (message.content === `ur ugly`) {
 	message.channel.send('youre such a meanie');
 } else if (message.content === `what can i say`) {
-	message.member.send('you can say the following\n hi izanami\n morning\n go out with me!\n I love you.\n stfu\n fuck\n shit\n you are so cute\n are you ok?\n ur ugly');
+	message.member.send('you can say the following:\n "hi izanami"\n"morning"\n"go out with me!"\n"I love you."\n"stfu"\n"fuck"\n"shit"\n"you are so cute"\n"are you ok?"\n"ur ugly"\nAny of these phrases or words will give a response.');
 }
 	
 });
