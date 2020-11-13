@@ -39,12 +39,13 @@ mention = message.mentions.users.first();
 } else if (message.content === `ur ugly`) {
 	message.channel.send('youre such a meanie');
 } else if (message.content === `what can i say`) {
-	message.member.send('you can say the following:\n "hi izanami"\n"morning"\n"go out with me!"\n"I love you."\n"stfu"\n"fuck"\n"shit"\n"you are so cute"\n"are you ok?"\n"ur ugly"\n"you are pretty izanami"\n"shut up"\nAny of these phrases or words will give a response.');
+	message.member.send('you can say the following:\n "hi izanami"\n"morning"\n"go out with me!"\n"I love you."\n"stfu"\n"fuck"\n"shit"\n"you are so cute"\n"are you ok?"\n"ur ugly"\n"ur so wierd"\n"you are pretty izanami"\n"shut up"\nAny of these phrases or words will give a response.');
 } else if (message.content === 'you are pretty izanami') {
 	message.channel.send(':relaxed: ありがとうございます!')
 } else if (message.content === 'shut up') {
 	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
-} 
+} else if (message.content === 'ur so wierd') {
+	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
 
 });
 
