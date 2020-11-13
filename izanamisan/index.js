@@ -11,7 +11,6 @@ client.user.setPresence({ activity: { name: 'Testing' }, status: 'dnd' });
 });
 
 client.on('message', message => {
-client.on('guildMemberAdd', (member) => {
 const user = message.mentions.users.first();
 client.users.cache.get('<id>');
 mention = message.mentions.users.first();
@@ -47,5 +46,3 @@ mention = message.mentions.users.first();
 client.login('Nzc1Mzc1OTc5NjkwMTk3MDUy.X6lbJw.uNM4yav6ibwyycw2a-Fpjrss7aA');
 
 client.on('debug', console.log);
-
-});
