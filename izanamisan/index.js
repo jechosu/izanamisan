@@ -48,6 +48,11 @@ mention = message.mentions.users.first();
 	message.channel.send('be a little more nice, could you? :relaxed: :pleading_face:')
 } else if (message.content === 'thats kapp right izanami') {
 	message.channel.send('no it isnt')
+} else if (message.content.startsWith('L!hug')) { 
+    let targetMember = message.mentions.members.first();
+    if(!targetMember) return message.reply('you need to tag a user in order to hug them!!');
+        // message goes below!
+         message.channel.send(`<@${targetMember.user.id}> you just got a hug  https://tenor.com/view/anime-cuddle-cute-gif-12668750`);
 }
 
 });
