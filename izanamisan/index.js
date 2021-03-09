@@ -58,6 +58,16 @@ mention = message.mentions.users.first();
     if(!targetMember) return message.reply('who do u desire to send ur happy bday to?');
         // message goes below!
          message.channel.send(`<@${targetMember.user.id}> happy birthday!! https://tenor.com/view/happy-birthday-to-you-minions-singing-gif-15506821`);
+} else if (message.content.startsWith('rickroll')) { 
+    let targetMember = message.mentions.members.first();
+    if(!targetMember) return message.reply('mention someone to roll');
+        // message goes below!
+         message.channel.send(`<@${targetMember.user.id}> GET RICKROLLED LOL KEKW https://tenor.com/view/dance-moves-dancing-singer-groovy-gif-17029825`);
+} else if (message.content.startsWith('stickbug')) { 
+    let targetMember = message.mentions.members.first();
+    if(!targetMember) return message.reply('mention someone to bug');
+        // message goes below!
+         message.channel.send(`<@${targetMember.user.id}> GET STICKBUGED LOL KEKW https://tenor.com/view/get-stick-bugged-lol-gif-18023988`);
 }
 
 });
