@@ -53,7 +53,11 @@ mention = message.mentions.users.first();
     if(!targetMember) return message.reply('you need to tag a user in order to hug them!!');
         // message goes below!
          message.channel.send(`<@${targetMember.user.id}> you just got a hug  https://tenor.com/view/anime-cuddle-cute-gif-12668750`);
-}
+} else if (message.content.startsWith('happy birthday')) { 
+    let targetMember = message.mentions.members.first();
+    if(!targetMember) return message.reply('who do u desire to send ur happy bday to?');
+        // message goes below!
+         message.channel.send(`<@${targetMember.user.id}> happy birthday!! https://tenor.com/view/happy-birthday-to-you-minions-singing-gif-15506821`);
 
 });
 
