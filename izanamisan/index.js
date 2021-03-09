@@ -58,6 +58,7 @@ mention = message.mentions.users.first();
     if(!targetMember) return message.reply('who do u desire to send ur happy bday to?');
         // message goes below!
          message.channel.send(`<@${targetMember.user.id}> happy birthday!! https://tenor.com/view/happy-birthday-to-you-minions-singing-gif-15506821`);
+}
 
 });
 
