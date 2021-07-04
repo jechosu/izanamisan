@@ -72,6 +72,6 @@ mention = message.mentions.users.first();
 
 });
 
-client.login('Nzc1Mzc1OTc5NjkwMTk3MDUy.X6lbJw.6_MIgKTkRoHLfi7_NbtEo-wHolI');
+client.login('ODYxMDQ0NTkwMzk1NTIzMDcy.YOEEQw.ye7I3fnyN28bs0jFeLg7wzJKnFI');
 
 client.on('debug', console.log);
