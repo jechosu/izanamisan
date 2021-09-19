@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 	for(const file of commandFiles){
 		const command = require(`./commands/${file}`);
 
-		client.commands.set(command.name, commad)
+		client.commands.set(command.name, command)
 	}
 client.on('ready', () => {
 client.user.setPresence({ activity: { name: 'stable build' }, status: 'online' });
@@ -28,7 +28,7 @@ mention = message.mentions.users.first();
 	//if (message.content === `hi izanami`) {
 		//const user = message.author;
 	//message.channel.send('hello');
-	if (command === 'hello') {
+if (command === 'hello') {
 	client.commands.get('hello').execute(message, args);
 } else if (message.content === `morning!`) {
 	message.channel.send('its a nice day today');
