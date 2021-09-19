@@ -6,6 +6,16 @@ const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const PORT = process.env.PORT || 3000;
     console.log(`App is running on port ${ PORT }`);
 
+	const fs = require('fs');
+
+	client.commands = new Discord.Collection();
+
+	const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+	for(const file of commandFiles){
+		const command = require(`./commands/${file}`);
+
+		client.commands.set(command.name, commad)
+	}
 client.on('ready', () => {
 client.user.setPresence({ activity: { name: 'stable build' }, status: 'online' });
 });
@@ -15,15 +25,19 @@ const user = message.mentions.users.first();
 client.users.cache.get('<id>');
 mention = message.mentions.users.first();
 	
-	if (message.content === `hi izanami`) {
-		const user = message.author;
-	message.channel.send('hello');
+	//if (message.content === `hi izanami`) {
+		//const user = message.author;
+	//message.channel.send('hello');
+	if (command === 'hello') {
+	client.commands.get('hello').execute(message, args);
 } else if (message.content === `morning!`) {
 	message.channel.send('its a nice day today');
 } else if (message.content === `go out with me!`) {
 	message.channel.send('im sorry. I cant do that .');
 } else if (message.content === `I love you.`) {
 	message.channel.send('I cant accept your confession.');
+} else if (command === 'ping') {
+	client.commands.get('ping').execute(message, args); 
 } else if (message.content === `stfu`) {
 	message.channel.send('please be a little more nice...teehee :)');
 } else if (message.content === `fuck`) {
