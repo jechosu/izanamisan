@@ -24,16 +24,6 @@ mention = message.mentions.users.first();
 	message.channel.send('im sorry. I cant do that .');
 } else if (message.content === `I love you.`) {
 	message.channel.send('I cant accept your confession.');
-} else if (message.content === `stfu`) {
-	message.channel.send('please be a little more nice...teehee :)');
-} else if (message.content === `fuck`) {
-	message.channel.send('i dont want to be mean, but dont curse so much, ok? (if you can, censor it)');
-} else if (message.content === `shit`) {
-	message.channel.send('i dont want to be mean, but dont curse so much, ok? (if you can, censor it)');
-} else if (message.content === `are you ok?`) {
-	message.channel.send('I-im fine..');
-} else if (message.content === `||fuck||`) {
-	message.channel.send('i dont want to be mean, but dont curse so much, ok? (if you can, censor it)');
 } else if (message.content === `you are so cute`) {
 	message.channel.send(':relaxed: ありがとうございます!');
 } else if (message.content === `ur ugly`) {
